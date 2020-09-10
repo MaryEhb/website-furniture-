@@ -1,0 +1,57 @@
+/********button***********/
+
+button{
+    border:none;
+    color:#fff;
+    cursor: pointer;
+    transition: all ease-in-out 0.25s;
+
+    &:active{
+        transform: scale(0.95);
+    }
+}
+
+.arrow{
+    border-radius: 50%;
+    background-color:$secColor;
+    height:50px;
+    width:50px;
+    transition: all ease-in-out 0.25s;
+    position: relative;
+    cursor: pointer;
+
+    img{
+        position: absolute;
+        animation: arrow linear .75s infinite;
+        top: 13px;
+        transition: all linear 0.15s;
+    }
+
+    &:hover{
+        background-color: $mainColor;
+    }
+}
+
+/*arrow animation*/
+@keyframes arrow{
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.sub-btn{
+    background-color: $mainColor;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    width: 45%;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    min-width: 200px;
+
+    &:hover{
+        background-color: $secColor;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--StyleSheets-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+</head>
+<body>
+
+    <!--Welcome/Home Section-->
+    <div class="container flex flex-center home-wrap">
+        <section id="home" class="flex">
+            <div class="welcome-text flex flex-column">
+                <h3 class=" wow animate__animated animate__fadeInUp" data-wow-delay=".6s">art of chairs</h3>
+                <h1 class=" wow animate__animated animate__fadeInUp">Welcome to the Chairs World, Where you will find the best chairs</h1>
+                <a href="#about" class="arrow flex flex-center animate__animated animate__fadeIn" style="animation-delay:.6s">
+                    <img src="assests/icons/arrow.png" alt="arrow-btn" title="arrow-btn">
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!--About Section-->
+    <section id="about" class=" container flex">
+        <img src="assests/images/about.jpg" alt="about image" class="brd-radius wow animate__animated animate__fadeInUp">
+        <div class="flex flex-column bg-white text brd-radius">
+            <div class=" wow animate__animated animate__fadeInUp">
+                <h3>we make things better</h3>
+                <h2>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</h2>
+            </div>
+                <p class=" wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+
+    <!--Work Section-->
+    <section id="work" class="bg-white">
+        <div class="container">
+            <div class=" wow animate__animated animate__fadeInUp">
+            <h2 class="capital">work collection</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="images">
+                <img src="assests/images/1st.jpg" alt="chairs-img" class="brd-radius  wow animate__animated animate__fadeInUp">
+                <img src="assests/images/2nd.jpg" alt="chairs-img" class="brd-radius  wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                <img src="assests/images/3rd.jpg" alt="chairs-img" class="brd-radius  wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
+                <img src="assests/images/4th.jpg" alt="chairs-img" class="brd-radius  wow animate__animated animate__fadeInUp" data-wow-delay=".9s">
+
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact" class="container">
+        <div class=" wow animate__animated animate__fadeInUp">
+        <h2 class="capital">get in touch</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <form action="#" method="" class=" wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+            <div class="flex">
+                <input type="text" name="name" placeholder="Name" class="brd-radius bg-white">
+                <input type="email" name="email" placeholder="Email" class="brd-radius bg-white">
+            </div>
+            <textarea name="message" placeholder="Message" id="message" class="brd-radius bg-white"></textarea>
+            <div class="flex flex-center">
+                <button type="submit" id="submit" class="sub-btn capital">send message</button>
+            </div>
+        </form>
+    </section>
+
+    <!--Footer-->
+    <section id="footer">
+        <div class="container flex">
+            <div class="flex flex-column  wow animate__animated animate__fadeInUp">
+                <h4 class="capital">art of chairs</h4>
+                <p>Curabitur quis volutpat elit. Proin sed sagittis arcu, non tristique libero. Quisque lobortis nibh eu nisi sodales gravida.</p>
+                <div class="social-icons flex">
+
+                </div>
+            </div>
+
+            <div class="flex flex-column wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                <div>
+                    <h4 class="capital">reach out</h4>
+                    <p>45 Street, New york, US</p>
+                </div>
+                <div>
+                    <h4 class="capital">contact info</h4>
+                    <p>company@mail.com</p>
+                    <p>Tel: 010-555-5555</p>
+                </div>
+            </div>
+
+            <div class="flex flex-column wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
+                <h4 class="capital">newsletter</h4>
+                <form action="" method="" class="flex flex-column flex-center">
+                    <input type="email" name="newsletterEmail" id="newsletterEmail" placeholder="Your Email Adress">
+                    <button type="submit" name="sub-news" class="sub-btn capital bg-white">sign up</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--JavaScript-->
+    <script src="js/wow.min.js"></script>
+
+    <script>
+        //arrow button
+        const arrow = document.querySelector(".arrow");
+        const aboutSection = document.getElementById("about");
+
+        arrow.removeAttribute('href');
+        arrow.addEventListener('click',(e)=>{
+            aboutSection.scrollIntoView({behavior:"smooth"});
+        });
+
+        //Start Wow 
+        new WOW().init();
+    </script>
+
+</body>
+</html>

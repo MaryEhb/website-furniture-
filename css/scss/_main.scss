@@ -1,0 +1,91 @@
+
+/***************Main Rulez******************/
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+::selection{
+    background-color: $mainColor;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+    font-weight: 300;
+    background-color: #f4f4f4;
+
+    @media (max-width:500px){
+        font-size:.91rem;
+    }
+}
+
+p{
+    color: #878787;
+    padding: .5rem 0;
+    line-height: 1.7;
+}
+
+h1{
+    color: $secColor;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size:2.5rem;
+}
+
+h2{
+    font-weight: lighter;
+    color: $secColor;
+    font-size:2rem;
+}
+
+h3{
+    color: $mainColor;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1rem;
+}
+
+h4{
+    color:#fff;
+    font: {
+        size: 1.25rem;
+        weight: lighter;
+    }    
+
+}
+
+.container{
+    margin:0 auto;
+    padding: 0 2rem;
+    max-width: 1170px;
+    position: relative;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-center{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-white{
+    background:#fff !important;
+}
+
+.brd-radius{
+    border-radius:5px;
+}
+
+.capital{
+    text-transform: capitalize;
+}
