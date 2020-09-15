@@ -227,6 +227,25 @@ section:not(#home) {
   width: 14px;
 }
 
+#home .welcome-text .arrow img {
+  width: 14px;
+}
+
+@media (max-width:636px){
+  #home .welcome-text{
+    height: auto;
+    max-width:98%;
+  }
+
+  #home .welcome-text h1{
+    font-size: 1.5rem;
+  }
+
+  #home .welcome-text .arrow{
+    transform: scale(.8);
+  }
+}
+
 /*about section*/
 #about {
   -webkit-box-pack: justify;
