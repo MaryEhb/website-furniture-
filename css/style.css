@@ -221,6 +221,10 @@ section:not(#home) {
           align-items: center;
   text-align: center;
   max-width: 85%;
+   position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #home .welcome-text .arrow img {
