@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 </head>
 <body>
 
@@ -45,10 +46,10 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="images">
-                <img src="assests/images/1st.jpg" alt="chairs-img" class="brd-radius  wow animate__animated animate__fadeInUp">
-                <img src="assests/images/2nd.jpg" alt="chairs-img" class="brd-radius  wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
-                <img src="assests/images/3rd.jpg" alt="chairs-img" class="brd-radius  wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
-                <img src="assests/images/4th.jpg" alt="chairs-img" class="brd-radius  wow animate__animated animate__fadeInUp" data-wow-delay=".9s">
+                <a class="image-popup" href="assests/images/1st.jpg"><img src="assests/images/1st.jpg" alt="chairs-img" class="brd-radius  wow animate__animated animate__fadeInUp"></a>
+                <a class="image-popup" href="assests/images/2nd.jpg"><img src="assests/images/2nd.jpg" alt="chairs-img" class="brd-radius  wow animate__animated animate__fadeInUp" data-wow-delay=".3s"></a>
+                <a class="image-popup" href="assests/images/3rd.jpg"><img src="assests/images/3rd.jpg" alt="chairs-img" class="brd-radius  wow animate__animated animate__fadeInUp" data-wow-delay=".6s"></a>
+                <a class="image-popup" href="assests/images/4th.jpg"><img src="assests/images/4th.jpg" alt="chairs-img" class="brd-radius  wow animate__animated animate__fadeInUp" data-wow-delay=".9s"></a>
 
             </div>
         </div>
@@ -60,12 +61,12 @@
         <h2 class="capital">get in touch</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         </div>
-        <form action="#" method="" class=" wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+        <form method="POST" class="contact_form wow animate__animated animate__fadeIn" data-wow-delay=".5s">
             <div class="flex">
-                <input type="text" name="name" placeholder="Name" class="brd-radius bg-white">
-                <input type="email" name="email" placeholder="Email" class="brd-radius bg-white">
+                <input type="text" name="name" placeholder="Name" class="name brd-radius bg-white">
+                <input type="email" name="email" placeholder="Email" class="email brd-radius bg-white">
             </div>
-            <textarea name="message" placeholder="Message" id="message" class="brd-radius bg-white"></textarea>
+            <textarea name="message" placeholder="Message" id="message" class="message brd-radius bg-white"></textarea>
             <div class="flex flex-center">
                 <button type="submit" id="submit" class="sub-btn capital">send message</button>
             </div>
@@ -107,20 +108,11 @@
 
     <!--JavaScript-->
     <script src="js/wow.min.js"></script>
+    <script src="js/smtp.js"></script>
+    <script src="js/script.js"></script>
 
-    <script>
-        //arrow button
-        const arrow = document.querySelector(".arrow");
-        const aboutSection = document.getElementById("about");
-
-        arrow.removeAttribute('href');
-        arrow.addEventListener('click',(e)=>{
-            aboutSection.scrollIntoView({behavior:"smooth"});
-        });
-
-        //Start Wow 
-        new WOW().init();
-    </script>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
 </body>
 </html>
